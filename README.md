@@ -11,7 +11,7 @@ This first lab is aiming to create a recomendation system and to evaluate it on 
 
 Improvements to the model and experiments are given at the end of the notebooks
 
-## 2 - [MC](thttps://github.com/intv0id/AML_Course/tree/master/2-MC)
+## 2 - [MC](https://github.com/intv0id/AML_Course/tree/master/2-MC)
 
 This lab is about the Monte-Carlo decision algorithm.
 

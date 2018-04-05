@@ -5,13 +5,13 @@ Algorithmic Machine Learning Course (EURECOM, Spring 2018, Prof. Michiardi)
 
 Laïla SALHI - Clément TRASSOUDAINE
 
-## 1 - [RecSys](tree/master/1%20-%20RecSys)
+## 1 - [RecSys](https://github.com/intv0id/AML_Course/tree/master/1-RecSys)
 
 This first lab is aiming to create a recomendation system and to evaluate it on a LastFM listening Dataset, using the matrix decomposition algorithm, which is pretty efficient and easy to implement. 
 
 Improvements to the model and experiments are given at the end of the notebooks
 
-## 2 - [MC](tree/master/2%20-%20MC)
+## 2 - [MC](thttps://github.com/intv0id/AML_Course/tree/master/2-MC)
 
 This lab is about the Monte-Carlo decision algorithm.
 

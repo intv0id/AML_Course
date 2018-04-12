@@ -14,3 +14,7 @@ Improvements to the model and experiments are given at the end of the notebooks
 ## 2 - [MC](https://github.com/intv0id/AML_Course/tree/master/2-MC/MC.ipynb)
 
 This lab is about the Monte-Carlo decision algorithm.
+
+## 3 - [House-Pricing](https://github.com/intv0id/AML_Course/tree/master/3-HousePricing/HousePricing.ipynb)
+
+Determine the price of Houses based on training data.

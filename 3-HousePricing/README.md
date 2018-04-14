@@ -1,5 +1,5 @@
 To export the notebook:
 
-````bash
+```bash
 jupyter nbconvert HousePricing.ipynb --template toc2
 ``` 

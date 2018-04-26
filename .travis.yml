@@ -2,7 +2,7 @@ language: bash
 sudo: true
 install:
   - sudo apt -y install python3 python3-pip
-  - sudo pip3 install -y jupyter jupyter_contrib_nbextensions
+  - sudo pip3 install -q jupyter jupyter_contrib_nbextensions
   - sudo jupyter contrib nbextension install --system
 script:
   - (find -type f -iregex .*\.ipynb; find -type f -iregex .*-checkpoint\.ipynb) | sort | uniq -u | jupyter nbconvert --template toc2

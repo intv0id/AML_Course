@@ -21,5 +21,14 @@ install:
   - jupyter nbextension enable toc2/main
 
 script:
-  - (find -type f -iregex .*\.ipynb; find -type f -iregex .*-checkpoint\.ipynb) | sort | uniq -u | jupyter nbconvert --template toc2 --to html 
+  - (find -type f -iregex .*\.ipynb; find -type f -iregex .*-checkpoint\.ipynb) | sort | uniq -u | xargs jupyter nbconvert --template toc2 --to html 
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  keep-history: true
+  local-dir: exports
+  on:
+    branch: master
 

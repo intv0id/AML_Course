@@ -2,6 +2,7 @@ language: bash
 sudo: true
 install:
   - sudo apt -y install python3 python3-pip build-essential python3-dev
+  - sudo pip3 install --upgrade pip
   - sudo pip3 install -q jupyter jupyter_contrib_nbextensions
   - sudo jupyter contrib nbextension install --system
 script:

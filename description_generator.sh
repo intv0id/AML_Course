@@ -11,7 +11,7 @@ function titled_desc {
         buffer_description_file="$notebook_path/buffer_description.md" 
         html_notebook_file=$(sed "s/\(.*\).ipynb/\1.html/")
         
-        echo "## [$notebook_file]($html_notebook_file)" > $buffer_description_file
+        printf "## [$notebook_file]($html_notebook_file)\n" > $buffer_description_file
         cat $description_file >> $buffer_description_file
 
         echo $buffer_description_file

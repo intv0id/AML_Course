@@ -21,17 +21,14 @@ install:
   - jupyter nbextension enable toc2/main
 
 script:
+  # Export the notebooks to html
   - (find -type f -iregex .*\.ipynb; find -type f -iregex .*-checkpoint\.ipynb) | 
       sort | 
       uniq -u | 
       xargs jupyter nbconvert --template toc2 --to html --output-dir Public-visu 
+  # Generating descriptive homepage
+  - sh ./description_generator.sh
 
-# TODO: Dynamically add links to the .md file
-
-# TODO: To activate when challenge will be over
-# TODO: Generate token
-#
-# https://docs.travis-ci.com/user/deployment/pages/
 deploy:
   provider: pages
   skip-cleanup: true

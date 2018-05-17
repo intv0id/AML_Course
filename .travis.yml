@@ -1,10 +1,6 @@
 language: python
 python:
   - "3.6"
-#addons:
-#  apt:
-#    packages:
-#    - pandoc
 install:
   - pip install grip
   # Install miniconda
@@ -32,7 +28,7 @@ script:
       uniq -u | 
       xargs jupyter nbconvert --template toc2 --to html --output-dir Public-visu 
   # Generating descriptive homepage
-  - bash ./description_generator.sh
+  - bash ./scripts/description_generator.sh
 
 deploy:
   provider: pages

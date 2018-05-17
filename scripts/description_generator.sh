@@ -27,5 +27,5 @@ function clean {
     done
 }
 
-cat README.md $(titled_desc $notebooks_path) | grip --export Public-visu/index.html
+cat README.md $(titled_desc $notebooks_path) | grip --export - > ./Public-visu/index.html
 clean $notebooks_path

@@ -26,5 +26,7 @@ function clean {
     done
 }
 
-pandoc -o Public-visu/index.html -f markdown -t html <(cat README.md $(titled_desc $notebooks_path))
+#pandoc -o Public-visu/index.html -f markdown -t html <(cat README.md $(titled_desc $notebooks_path))
+# Export readme to html
+grip <(cat README.md $(titled_desc $notebooks_path)) --export Public-visu/index.html
 clean $notebooks_path

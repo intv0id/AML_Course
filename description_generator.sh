@@ -24,5 +24,5 @@ function clean {
     done
 }
 
-cat README.md $(titled_desc $notebooks_path) > Public-visu/README.md
+pandoc -o Public-visu/index.html -f markdown -t html <(cat README.md $(titled_desc $notebooks_path))
 clean $notebooks_path

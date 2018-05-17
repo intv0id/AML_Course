@@ -9,8 +9,9 @@ function titled_desc {
         notebook_file=$(echo $notebook | sed "s/.*\/\(.*\)$/\1/")
         description_file="$notebook_path/description.md"
         buffer_description_file="$notebook_path/buffer_description.md" 
+        html_notebook_file=$(sed "s/\(.*\).ipynb/\1.html/")
         
-        echo "## [$notebook]($notebook_file)" > $buffer_description_file
+        echo "## [$notebook_file]($html_notebook_file)" > $buffer_description_file
         cat $description_file >> $buffer_description_file
 
         echo $buffer_description_file

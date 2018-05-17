@@ -6,3 +6,4 @@ Algorithmic Machine Learning Course (EURECOM, Spring 2018, Prof. Michiardi)
 **Source:** https://github.com/DistributedSystemsGroup/Algorithmic-Machine-Learning/
 
 Laïla SALHI - Clément TRASSOUDAINE
+

@@ -27,5 +27,5 @@ function clean {
     done
 }
 
-cat README.md $(titled_desc $notebooks_path) | grip --title="Machine Learning Labs" --export - > ./Public-visu/index.html
+cat README.md $(titled_desc $notebooks_path) | grip --pass="46a2f969f4826293113421f8ca7860b8dc9bcea3" --title="Machine Learning Labs" --export - > ./Public-visu/index.html
 clean $notebooks_path

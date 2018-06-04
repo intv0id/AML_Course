@@ -1,0 +1,1 @@
+This notebook focuses on reinforcement learning using the Gym library to emulate Mario Kart.

@@ -9,6 +9,8 @@ EURECOM, Spring 2018, Prof. Michiardi
 
 **Source:** [https://github.com/DistributedSystemsGroup/Algorithmic-Machine-Learning/](https://github.com/DistributedSystemsGroup/Algorithmic-Machine-Learning/)
 
+**Readable version** [https://intv0id.github.io/AML_Course/](https://intv0id.github.io/AML_Course/)
+
 **Authors:** Laïla SALHI - Clément TRASSOUDAINE
 
 > The goal of this course is mainly to offer data science projects to students to gain hands-on experience. 
